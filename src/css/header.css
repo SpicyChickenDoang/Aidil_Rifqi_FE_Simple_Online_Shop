@@ -1,0 +1,49 @@
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+  /* width: 100%; */
+}
+
+.header a {
+  float: left;
+  padding: 12px;
+  width: 80px;
+  height: 80px;
+}
+.header a img{
+  width: 80px;
+  height: 80px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+.button {
+  font-size: 60px;
+  right: 20px;
+  padding: 10px;
+  border: none;
+  width: 80px;
+  height: 2em;
+  will-change: filter;
+  transition: filter 300ms;
+  border-radius: 50%;
+}
+
+.button:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+  cursor: pointer;
+}

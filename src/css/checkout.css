@@ -1,0 +1,23 @@
+.email {
+  margin-top: 2rem; 
+}
+
+.email input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.final-checkout {
+  margin-top: 30px;
+  padding: 10px;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  height: 80px;
+  width: 100%;
+  font-size: 40px;
+}
