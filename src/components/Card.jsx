@@ -5,7 +5,10 @@ function Card({ image, title, description, id, amount }) {
 
   const setQty = (e) => {
     const card = e.target.closest(".card");
-    const qty = e.target.value;
+    let qty = e.target.value;
+    if(qty == 'e') {
+      qty = 1;
+    }
     updateCart(card, qty, "set");
   }
 
@@ -25,7 +28,7 @@ function Card({ image, title, description, id, amount }) {
 
   return (
     <div className="card" key={id} id={id}>
-      <img id="image" src={`${import.meta.env.VITE_API_BASE_URL}/${image[0]}`} />
+      <img id="image" src={`${import.meta.env.VITE_API_IMAGE_URL}/${image[0]}`} />
       <div className="container">
         <p id="title"><b>{title}</b></p>
         <p id="desc">{description}</p>
@@ -47,6 +50,9 @@ const updateCart = (card, qty, action) => {
 
   let cart = JSON.parse(localStorage.getItem('miniCart')) || [];
   const existingItem = cart.find(item => item.id === id);
+  if(!existingItem) {
+    action = "add";
+  }
 
   if (action == "add") {
     if (existingItem) {

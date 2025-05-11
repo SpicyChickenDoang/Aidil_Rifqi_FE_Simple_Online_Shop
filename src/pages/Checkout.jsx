@@ -47,7 +47,7 @@ const Checkout = () => {
     <Header />
     <List />
     <div className="email">
-      <input type="email" onChange={(e) => setEmail(e.target.value)} name="email" placeholder="Email" />
+      <input type="email" onChange={(e) => setEmail(e.target.value)} name="email" placeholder="Email" required value={email}/>
       <button className="final-checkout" onClick={handleBuy}>Buy</button>
       {error && <p style={{ color: 'red' }}>{error}</p>}
     </div>
