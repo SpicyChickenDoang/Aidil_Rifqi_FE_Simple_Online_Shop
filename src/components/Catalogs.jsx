@@ -25,8 +25,8 @@ function Catalogs() {
     fetchData();
   }, [])
 
-  if(error == true) {
-    return (<div style={{marginTop: '30px', fontSize: '40px'}}>No Items Found!</div>)
+  if (error == true) {
+    return (<div style={{ marginTop: '30px', fontSize: '40px' }}>No Items Found!</div>)
   }
 
   return (

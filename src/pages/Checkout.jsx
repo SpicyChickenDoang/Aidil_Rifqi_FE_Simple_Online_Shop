@@ -39,6 +39,13 @@ const Checkout = () => {
     });
 
     const result = await response.json();
+    console.log(response);
+    if(response.ok == false) {
+      setError('Too much quantity to bought.');
+      return;
+    }
+    
+    localStorage.setItem('miniCart', "[]");
     navigate("/");
   };
 
