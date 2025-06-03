@@ -35,9 +35,12 @@
     position: relative;
     background: beige;
     padding: 2rem;
-    width: 500px;
-    height: 500px;
+    width: 30em;
+    height: 30em;
     border: 1px solid #ccc;
+    overflow: hidden;
+    box-sizing: content-box;
+    overflow-y: scroll;
 }
 
 .modal button {

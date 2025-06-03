@@ -41,7 +41,7 @@ function Login() {
 
     return (
         <div className="login-container">
-            <img src={viteLogo} alt="Logo" className="login-logo" />
+            <h1 style={{fontFamily: "Arial"}}>LOGIN</h1>
             <form onSubmit={handleLogin} className="login-form">
                 <input
                     type="email"
