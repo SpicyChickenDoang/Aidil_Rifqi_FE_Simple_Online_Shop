@@ -2,23 +2,23 @@
 .header {
   overflow: hidden;
   background-color: #f1f1f1;
-  padding: 20px 10px;
+  /* padding: 20px 10px; */
   /* width: 100%; */
 }
 
 .header a {
   float: left;
   padding: 12px;
-  width: 80px;
-  height: 80px;
+  width: 2em;
+  height: 2em;
 }
 .header a img{
-  width: 80px;
-  height: 80px;
+  width: 2em;
+  height: 2em;
 }
 
 .header a.logo {
-  font-size: 25px;
+  font-size: 2em;
   font-weight: bold;
 }
 
@@ -32,11 +32,11 @@
 }
 
 .button {
-  font-size: 60px;
+  font-size: 3em;
   right: 20px;
   padding: 10px;
   border: none;
-  width: 80px;
+  width: 2em;
   height: 2em;
   will-change: filter;
   transition: filter 300ms;
