@@ -50,7 +50,7 @@ function NewProduct({ isOpen, onClose }) {
     }
 
     return (<>
-        <div className="modal-backdrop">
+        <div className="modal-backdrop new">
             <div className="modal2">
                 <form onSubmit={submitProduct} className="product-form" encType="multipart/form-data">
                     <input
